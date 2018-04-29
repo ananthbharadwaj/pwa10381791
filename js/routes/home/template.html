@@ -1,0 +1,92 @@
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/img/poster4.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/poster2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/poster3.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+<div class="row home">
+<!-- popular movies -->
+  <div class="col-xs-12">
+  <a  href="#!/PopularMovies" class="title"><i class="glyphicon glyphicon-film"></i>Popular movies </a>
+    <div class="home-display">
+      <div class="image-container" ng-repeat="movie in vm.popularMovies">
+        <a ng-href="#!/movie/{{movie.id}}"><img class="home-img" ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" class="image"></a>
+        <div class="overlay">
+          <div class="text"><p>{{movie.title}}</p></div>
+          <div class="text"><i class="glyphicon glyphicon-film"></i>{{movie.release_date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top rated movies -->
+   <div class="col-xs-12">
+  <a  href="#!/topRatedMovies" class="title"><i class="glyphicon glyphicon-film"></i>Top rated movies</a>
+    <div class="home-display">
+      <div class="image-container" ng-repeat="movie in vm.topMovies">
+        <a ng-href="#!/movie/{{movie.id}}"><img class="home-img" ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" class="image"></a>
+        <div class="overlay">
+          <div class="text"><p>{{movie.title}}</p></div>
+          <div class="text"><i class="glyphicon glyphicon-film"></i>{{movie.release_date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- now playing -->
+  <div class="col-xs-12">
+  <a  href="#!/nowPlaying" class="title"><i class="glyphicon glyphicon-film"></i>Now playing movies</a>
+    <div class="home-display">
+      <div class="image-container" ng-repeat="movie in vm.nowPlaying">
+        <a ng-href="#!/movie/{{movie.id}}"><img class="home-img" ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" class="image"></a>
+        <div class="overlay">
+          <div class="text"><p>{{movie.title}}</p></div>
+          <div class="text"><i class="glyphicon glyphicon-film"></i>{{movie.release_date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coming soon -->
+   <div class="col-xs-12">
+  <a  href="#!/upComingMovies" class="title"><i class="glyphicon glyphicon-film"></i>Coming soon movies</a>
+    <div class="home-display">
+      <div class="image-container" ng-repeat="movie in vm.comingSoon">
+        <a ng-href="#!/movie/{{movie.id}}"><img class="home-img" ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" class="image"></a>
+        <div class="overlay">
+          <div class="text"><p>{{movie.title}}</p></div>
+          <div class="text"><i class="glyphicon glyphicon-film"></i>{{movie.release_date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

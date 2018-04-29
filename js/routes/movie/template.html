@@ -1,0 +1,126 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 return">
+      <a class="arrow" ng-click="vm.back()" data-target=""><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a>
+      <h2 class="title"><i class="glyphicon glyphicon-film"></i>{{vm.movie.title}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- photo place -->
+    <div class="col-sm-6">
+      <div class="movie">
+        <div class="image-movie">
+          <img ng-src="https://image.tmdb.org/t/p/w500{{vm.movie.poster_path}}" alt="" class="image img-responsive">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <!-- description -->
+      <div class="content">
+        <ul>
+          <li>
+            <p><span>Release Date:</span> {{vm.movie.release_date}}</p>
+          </li>
+          <li>
+            <p><span>Genres:</span> {{genres}}</p>
+          </li>
+          <li>
+            <p><span>Users Rating: </span><i class="glyphicon glyphicon-star small-icon"></i>{{ vm.movie.vote_average }}</p>
+            </p>
+          </li>
+          <li>
+            <p><span>Overview</span> {{vm.movie.overview}}</p>
+          </li>
+          <li><a ng-click="vm.watchVideo()" class="btnVideo" ng-model="vm.video" aria-label="Toggle ngShow">Watch Video</a></li>
+        </ul>
+
+        
+        
+      
+<div ng-app >
+  <div>
+      
+  </div>
+  
+  
+  <div ng-init="page='first'"></div>
+  
+  <div ng-show="page === 'first'">
+  <br/><br/>
+  <br/>
+   
+</div>
+  </div>
+  <br/><br/>
+  <br/>
+  <div ng-show="page === 'second'">
+    
+  </div>
+  <br/><br/>
+  <br/>
+  <div ng-show="page === 'third'">
+    
+  </div>
+</div>
+
+<hr></hr>
+
+
+  <!-- tabs -->
+  <div class="container"><h1>Show Timings : Please select date and time  </h1></div>
+<div id="exTab1" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        <a  data-target="#1a" data-toggle="tab">Today</a>
+			</li>
+			<li><a data-target="#2a" data-toggle="tab">Tomorrow</a>
+			</li>
+			<li><a data-target="#3a" data-toggle="tab">26-04-2018</a>
+			</li>
+  		<li><a data-target="#4a" data-toggle="tab">27-04-2018 </a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">8:30AM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">10:00AM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">12:30PM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">3:00PM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">4:10PM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">5:30PM</a></div>
+				</div>
+				<div class="tab-pane" id="2a">
+            
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">8:30AM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">3:00PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">4:10PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">5:30PM</a></div>
+				</div>
+        <div class="tab-pane" id="3a">
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">8:30AM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">10:00AM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">12:30PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">3:00PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">4:10PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">5:30PM</a></div>
+          <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">7:30PM</a></div>
+				</div>
+          <div class="tab-pane" id="4a">
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">3:00PM</a></div>
+            <div ng-init="myVar = '/movieSeats.html'"><a class="col-sm-3 btn btn-primary1" ng-href="{{myVar}}">4:10PM</a></div>
+    
+				</div>
+			</div>
+  </div>
+
+
+<hr></hr>
+  </div>
+  <!-- youtube -->
+  <div class="row">
+    <div class="youtube-box animate-show-hide" ng-show="vm.video">
+      <iframe ng-src="{{vm.youtube}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

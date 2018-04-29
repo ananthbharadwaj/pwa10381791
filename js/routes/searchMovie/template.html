@@ -1,0 +1,18 @@
+<div class="container">
+  <form ng-submit="vm.findMovie()" class="findMovie">
+    <input type="text" ng-model="vm.movie">
+  </form>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+      <div class="gal">
+        <div class="image-container" ng-repeat="movie in vm.moviesFound | filter : {title : query}">
+          <a ng-href="#!/movie/{{movie.id}}"><img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" class="image"></a>
+          <div class="overlay">
+            <div class="text"><p>{{movie.title}}</p></div>
+            <div class="text"><i class="glyphicon glyphicon-film"></i>{{movie.release_date}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
