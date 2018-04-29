@@ -9,6 +9,3 @@ It contains information for the most rated movies, coming soon movies, popular m
 
 It uses the TMDB API
 
-![angular-movie](img/how.jpg)
-
-You can try the app here -> https://devtoni.github.io/angular-movies-app/.#pwa10381791
